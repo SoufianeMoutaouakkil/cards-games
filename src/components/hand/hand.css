@@ -1,9 +1,14 @@
 .hand {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     display: flex;
     gap: 5px;
 }
 
-.hand .card:hover {
+.hand .card.active:hover {
     transform: translateY(-5px);
+}
+.hand .card {
+    flex: 0 0 auto; 
+    width: 80px;
 }
