@@ -1,0 +1,9 @@
+.hand {
+    width: 50%;
+    display: flex;
+    gap: 5px;
+}
+
+.hand .card:hover {
+    transform: translateY(-5px);
+}

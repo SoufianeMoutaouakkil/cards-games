@@ -1,15 +1,14 @@
 import React from "react";
-import Card from "../card/Card";
-import { getCards } from "../../config/belote";
+import cardsService from "../../services/cards";
+import Hand from "../hand/Hand";
 import "./table.css";
 
 function Table() {
-    const cards = getCards();
+    const cards = cardsService.getHandCards();
+
     return (
         <div className="table">
-            {cards.map((card) => (
-                <Card key={card.src} card={card} />
-            ))}
+            <Hand cards={cards} />
         </div>
     );
 }

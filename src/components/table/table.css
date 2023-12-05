@@ -1,7 +1,8 @@
 .table {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url("../../../public/assets/img/table/table1.jpg");
     width: 100%;
     height: 100%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(#45a049, #78a57a, #4d9f50);
 }
